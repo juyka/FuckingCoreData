@@ -1,0 +1,21 @@
+mo context
+https://developer.apple.com/library/content/documentation/DataManagement/Devpedia-CoreData/managedObjectContext.html
+https://developer.apple.com/reference/coredata/nsmanagedobjectcontext
+слайды - https://www.lynda.com/iOS-tutorials/Understanding-managed-object-context/101461/114528-4.html
+https://code.tutsplus.com/tutorials/core-data-from-scratch-concurrency--cms-22131
+https://medium.com/bpxl-craft/some-lessons-learned-on-core-data-5f095ecb1882#.8ibqqnw97
+https://www.youtube.com/watch?v=b7gV4D_wO18
+
+Note: There are three concurrency types a managed object context can use:
+ConfinementConcurrencyType specifies that the context will use the thread confinement pattern and that the developer will be responsible for managing all thread access. You should consider this type deprecated and never use it, as the next two types will cover all use cases.
+PrivateQueueConcurrencyType specifies that the context will be associated with a private dispatch queue instead of the main queue. This is the type of queue you just used to move the export operation off of the main queue so that it no longer interferes with the UI.
+MainQueueConcurrencyType, the default type, specifies that the context will be associated with the main queue. This type is what the main context (coreDataStack.context) uses. Any UI operation, such as creating the fetched results controller for the table view, must use a context of this type.
+
+
+
+concurency
+https://cocoacasts.com/core-data-and-concurrency/
+https://blog.codecentric.de/en/2014/11/concurrency-coredata/
+
+Проблемы и решения
+http://www.slideshare.net/xzolian/core-data-with-multiple-managed-object-contexts
