@@ -5,6 +5,7 @@ https://developer.apple.com/reference/coredata/nsmanagedobjectcontext
 https://code.tutsplus.com/tutorials/core-data-from-scratch-concurrency--cms-22131
 https://medium.com/bpxl-craft/some-lessons-learned-on-core-data-5f095ecb1882#.8ibqqnw97
 https://www.youtube.com/watch?v=b7gV4D_wO18
+https://habrahabr.ru/post/238901/
 
 Note: There are three concurrency types a managed object context can use:
 ConfinementConcurrencyType specifies that the context will use the thread confinement pattern and that the developer will be responsible for managing all thread access. You should consider this type deprecated and never use it, as the next two types will cover all use cases.
